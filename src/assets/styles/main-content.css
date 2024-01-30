@@ -1,0 +1,390 @@
+/* header */
+
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.header_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+
+}
+
+.header_navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header_navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.header_login {
+    display: flex;
+    align-items: center;
+}
+
+.header_search {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+
+
+}
+
+.header_search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header_search input {
+    background-color: transparent;
+    border: none;
+    padding: 0px 100px 0 12px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+
+}
+
+.header_login .subscribe {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.header_login .login {
+    width: 100px;
+    height: 48px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+/* hover */
+
+.header_search:hover {
+    border: 1px solid white;
+}
+
+.header_login .subscribe:hover {
+    transform: scale(1.04);
+    color: white;
+}
+
+.header_login .login:hover {
+    transform: scale(1.04);
+}
+
+/* fim hover */
+
+/* fim header */
+
+/* playlist */
+
+.playlist-container {
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist #greeting {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.playlist .session {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* scroll */
+
+.offer_scroll-container {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+}
+
+.offer_scroll-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer_scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* fim scroll */
+
+/* cod com js */
+
+.offer_list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+
+}
+
+.cards {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+
+}
+
+.cards span {
+    padding: 16px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* color cards */
+
+.cards1 {
+    background-color: rgb(0, 100, 80);
+}
+
+.cards2 {
+    background-color: rgb(132, 0, 231);
+}
+
+.cards3 {
+    background-color: rgb(30, 50, 100);
+}
+
+.cards4 {
+    background-color: rgb(140, 25, 50);
+}
+
+.cards5 {
+    background-color: rgb(232, 17, 91);
+}
+
+.cards6 {
+    background-color: rgb(83, 122, 161);
+}
+
+.cards7 {
+    background-color: rgb(142, 102, 172);
+}
+
+.cards8 {
+    background-color: rgb(20, 138, 8);
+}
+
+.cards9 {
+    background-color: rgb(30, 50, 100);
+}
+
+.cards10 {
+    background-color: rgb(233, 20, 41);
+}
+
+.cards11 {
+    background-color: rgb(80, 55, 80);
+}
+
+.cards12 {
+    background-color: rgb(216, 64, 0);
+}
+
+.cards13 {
+    background-color: rgb(186, 93, 7);
+}
+
+.cards14 {
+    background-color: rgb(0, 30, 80);
+}
+
+.cards15 {
+    background-color: rgb(60, 30, 80);
+}
+
+/* fim colors */
+
+.offer_list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 107px;
+    transform: rotate(25deg);
+    translate: (18%, -2%);
+}
+
+
+/* card artista */
+
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+.artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.artist-card:hover {
+    background-color: #252525;
+
+}
+
+.card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px; 
+
+}*
+
+.artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+
+
+
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+
+
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+
+}
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play{
+    opacity: 1;
+    transform: translate(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px;
+}
+
+/*fim do card artista

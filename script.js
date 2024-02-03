@@ -25,7 +25,7 @@ const observer = new ResizeObserver(() => { // mudanças no tamanho do elemento
     const numColumns = Math.floor(containerWidth / 200); // numero de colunas com base na largura do container
 
     // largura min 200px e max de 1fr 
-    container.style.gridTemplateColums = `repeat(${numColumns}, minmax (200px, 1fr))`;
+    container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(200px, 1fr))`;
 
     console.log({ container });
     console.log({ numColumns });

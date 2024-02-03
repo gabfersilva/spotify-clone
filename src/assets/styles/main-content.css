@@ -169,10 +169,9 @@
 
 .offer_list-item {
     display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 1rem;
+    grid-gap: 2rem;
+    margin: 0 auto;
 
 }
 

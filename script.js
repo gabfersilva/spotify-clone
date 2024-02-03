@@ -4,7 +4,7 @@ const greetingElement = document.getElementById("greeting")
 
 // obter a hora atual do sistema
 
-const currentHour = new Date().getHours;
+const currentHour = new Date().getHours();
 
 // define a saudação com base na hora atual 
 if (currentHour >= 5 && currentHour < 12) {

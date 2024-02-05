@@ -34,7 +34,7 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
 1. Clone o repositório: `git clone https://github.com/gabfersilva/spotify-clone.git`
 2. Abra o arquivo `index.html` no seu navegador preferido.
 3. Para utilizar a pesquisa de artistas é necessario utilizar o json server `npm install -g json-server@0.17.4`
-4. Depois suba o arquivo ´json-server --watch api-artists/artists.json´
+4. Depois suba o arquivo ´json-server --watch api-artists/artists.json´ usando o comando 'json-server --watch -p 3000 .\api-artists\artists.json'
 5. Pronto agora é só pesquisar algum artista cadastrado nesse aquivo 
 
 
